@@ -1,3 +1,5 @@
+local UpdateCount = 1
+
 do
     local DiamondLib = game:GetService("CoreGui"):FindFirstChild("Diamond [Atomic Lib]")
     if DiamondLib then
@@ -117,7 +119,7 @@ function create:Win()
     PageTap.Position = UDim2.new(0.189873412, 0, 0, 0)
     PageTap.Size = UDim2.new(0, 320, 0, 56)
 
-    UIGradient_PageTap.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230, 0, 39)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 35, 138))}
+    UIGradient_PageTap.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 255))}
     UIGradient_PageTap.Parent = PageTap
 
     
@@ -243,7 +245,7 @@ function tap:addtap(text)
     ScolPage.BorderSizePixel = 0
     ScolPage.Size = UDim2.new(0, 395, 0, 324)
     ScolPage.ScrollBarThickness = 3
-    ScolPage.ScrollBarImageColor3 =  Color3.fromRGB(255, 0, 125)
+    ScolPage.ScrollBarImageColor3 =  Color3.fromRGB(0, 255, 255)
 
     MainPage.Name = "MainPage"
     MainPage.Parent = ScolPage
@@ -486,7 +488,7 @@ function ems:Button1(text,callback)
     
     ToggleFrame1.Name = "ToggleFrame"
     ToggleFrame1.Parent = ScolPage2
-    ToggleFrame1.BackgroundColor3 = Color3.fromRGB(255, 0 ,95)
+    ToggleFrame1.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
     ToggleFrame1.BorderSizePixel = 0
     ToggleFrame1.BackgroundTransparency = 0
     ToggleFrame1.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -532,7 +534,7 @@ function ems:Button1(text,callback)
                     
     MheeFrameStroke1.Thickness = 1
     MheeFrameStroke1.LineJoinMode = Enum.LineJoinMode.Round
-    MheeFrameStroke1.Color = Color3.fromRGB(255, 0 ,95)
+    MheeFrameStroke1.Color = Color3.fromRGB(0, 255, 255)
     MheeFrameStroke1.Transparency = 0
 
     emsTextButton1.MouseButton1Click:Connect(function()
@@ -590,7 +592,7 @@ function  ems:Toggle(text,de,callback)
     local ToggleButton = Instance.new("TextButton")
 
     ToggleButton.Parent = ToggleFrame
-    ToggleButton.BackgroundColor3 = Color3.fromRGB( 0, 0, 60)
+    ToggleButton.BackgroundColor3 = Color3.fromRGB(0, 0, 60)
     ToggleButton.BackgroundTransparency = 1
     ToggleButton.AnchorPoint = Vector2.new(0, 0.5)
     ToggleButton.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -643,7 +645,7 @@ function  ems:Toggle(text,de,callback)
 
     TextButton_2_Toggle.Parent = ToggleButton2
     TextButton_2_Toggle.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
-    TextButton_2_Toggle.BorderColor3 = Color3.fromRGB(249, 53, 139)
+    TextButton_2_Toggle.BorderColor3 = Color3.fromRGB(0, 255, 255)
     TextButton_2_Toggle.BorderSizePixel = 0
     TextButton_2_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
     TextButton_2_Toggle.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -785,7 +787,7 @@ function ems:DropDown(text,text2,list,callback)
 
     DropFrame.Name = "DropFrame"
     DropFrame.Parent = ScolPage2
-    DropFrame.BackgroundColor3 = Color3.fromRGB(255, 0 ,95)
+    DropFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
     DropFrame.BorderSizePixel = 0
     DropFrame.BackgroundTransparency = 1
     DropFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -904,7 +906,7 @@ function ems:DropDown(text,text2,list,callback)
     
     ListFrame.Name = "ListFrame"
     ListFrame.Parent = ScolPage2
-    ListFrame.BackgroundColor3 = Color3.fromRGB(255, 0 ,95)
+    ListFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
     ListFrame.BorderSizePixel = 0
     ListFrame.BackgroundTransparency = 1
     ListFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -970,7 +972,7 @@ function ems:DropDown(text,text2,list,callback)
     listDropButton.Size = UDim2.new(0, 155, 0, 24)
     listDropButton.Font = Enum.Font.GothamSemibold
     listDropButton.Text = tostring(v)
-    listDropButton.TextColor3 = Color3.fromRGB(255, 20, 95)
+    listDropButton.TextColor3 = Color3.fromRGB(0, 255, 255)
     listDropButton.TextSize = 11.000
     listDropButton.AutoButtonColor = false 
     listDropButton.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1281,7 +1283,7 @@ function ems:Slder(text,min,max,de,callback)
 
     ConneValue.Name = "ConneValue"
     ConneValue.Parent = SecValue
-    ConneValue.BackgroundColor3 = Color3.fromRGB(255,255, 255)
+    ConneValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     ConneValue.Size = UDim2.new(0, 10, 0, 10)
     ConneValue.BackgroundTransparency = 0
     ConneValue.BorderSizePixel = 0 
@@ -1459,7 +1461,7 @@ function ems:Ti(text)
     local  lineframe = Instance.new("TextLabel")
                   
     lineframe.Parent = tiframe
-    lineframe.BackgroundColor3 = Color3.fromRGB(255, 0 ,95)
+    lineframe.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
     lineframe.BackgroundTransparency = 0
     lineframe.AnchorPoint = Vector2.new(0.6, 0.5)
     lineframe.Position = UDim2.new(0., 0, 0.4, 0)
@@ -1502,7 +1504,7 @@ end
 function ems:Label(text)
 
     local labelfuc = {}
-    local Labelxd = Instance.new("TextLabel")
+    local  Labelxd = Instance.new("TextLabel")
                   
     Labelxd.Parent = ScolPage2
     Labelxd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
