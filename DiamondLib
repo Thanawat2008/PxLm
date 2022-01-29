@@ -1,4 +1,4 @@
-local UpdateCount = 1
+local UpdateCount = 2
 
 do
     local DiamondLib = game:GetService("CoreGui"):FindFirstChild("Diamond [Atomic Lib]")
@@ -458,7 +458,6 @@ function ems:Button(text,callback)
         ):Play()
         pcall(callback)
     end)
-
     
     emsTextButton.MouseEnter:Connect(function (  )
     --    if joincheck.check1 == false then
@@ -1497,7 +1496,7 @@ function ems:Ti(text)
     lineframe3.Size = UDim2.new(0, 130, 0, 20)
     lineframe3.Font = Enum.Font.GothamSemibold
     lineframe3.Text = tostring(text)
-    lineframe3.TextColor3 = Color3.fromRGB(255, 100, 150)
+    lineframe3.TextColor3 = Color3.fromRGB(0, 255, 255)
     lineframe3.TextSize = 12.000
 end
 
