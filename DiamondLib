@@ -1,6 +1,4 @@
-local UpdateCount = 3
-
-Toggle
+local UpdateCount = 4
 
 do
     local DiamondLib = game:GetService("CoreGui"):FindFirstChild("Diamond [Atomic Lib]")
